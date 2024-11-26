@@ -1,0 +1,85 @@
+---
+title: "About Me"
+author: "Xeng Yang"
+date: today
+theme: solarized
+backgroundcolor: blue
+format: revealjs
+---
+
+## Introduction {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+
+<small>
+
+<ul>
+
+<li>My name is **Xeng Yang** .</li>
+
+<li>I was born on the August 27, 1993.</li>
+
+<li>My hometown is Minneapolis, MN.</li>
+
+<li>I am the PhD in Statistics at UNL and hoping to graduate in Spring 2029.</li>
+
+</ul>
+
+</small>
+
+## My favourite Animal {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+<p align="center">
+
+Eagle is my favorite animal, because they are brave, strong, and intelligent and also they look cool.
+
+</p>
+
+![](eagle.png){fig-pos="H" fig-env="figure" fig-align="center"}
+
+## My Favorite Plot {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+
+```{r, echo=FALSE,fig.width=6, fig.height=3.5, fig.align="center"}
+
+
+if (!"palmerpenguins" %in% installed.packages()) {
+  remotes::install_github("allisonhorst/palmerpenguins")
+}
+library(palmerpenguins)
+library(ggplot2)
+
+
+ggplot(penguins, aes(x = body_mass_g, y = bill_length_mm, color = species)) +
+  geom_point()
+
+
+
+```
+
+## Curriculum Vitae {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+[Here is the link to my CV](https://github.com/xengyang123/xengyang123.github.io/blob/main/CV.pdf)
